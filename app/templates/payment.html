@@ -1,0 +1,73 @@
+{% extends 'base.html' %} {% block container %}
+<div class="grid payment">
+  <div class="form-info">
+    <div class="title">THANH TOÁN</div>
+    <form action="">
+      <input type="text" name="name" id="" placeholder="Họ và tên" required/>
+      <input type="text" name="phone" id="" placeholder="Số điện thoại" required/>
+      <input type="email" name="email" id="" placeholder="Email" required />
+      <input type="text" name="address" id="" placeholder="Địa chỉ" required />
+      <textarea
+        name="note"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Ghi chú về đơn hàng"
+      ></textarea>
+      <p>
+        Thông tin cá nhân của bạn sẽ được sử dụng để xử lý đơn hàng và cho các
+        mục đích cụ thể khác đã được mô tả trong chính sách riêng tư của chúng
+        tôi.
+      </p>
+      <button type="submit" class="order-btn" onclick="order()">Đặt hàng</button>
+    </form>
+  </div>
+
+  <div class="bill">
+    <div class="title">Thông tin hoá đơn</div>
+    <div class="discount">
+      <div>Nhập mã giảm giá</div>
+      <div class="discount-id">
+        <input type="text" name="discount-id" id="" placeholder="Mã giảm giá" />
+        <button>Áp dụng</button>
+      </div>
+    </div>
+    <div class="bill-item">
+      <strong>Sản phẩm</strong>
+      <strong>Thành tiền</strong>
+    </div>
+    <div class="bill-item">
+      <div class="product-item">
+        <img
+          src="{{product.images[0]}}"
+          alt=""
+        />
+        <span class="name">{{product.name}}</span> x <span>{{amount}}</span>
+      </div>
+      <span> {{product.price}}đ </span>
+    </div>
+
+    <div class="bill-item temp">
+      <strong>Tạm tính</strong>
+      <span> {{product.price * amount}} đ</span>
+    </div>
+
+    <div class="bill-item total">
+      <strong>Tổng cộng</strong>
+      <span> {{product.price * amount}} đ</span>
+    </div>
+  </div>
+</div>
+
+<div id="pay-modal">
+  <div class="container">
+    <h3>Thông báo</h3>
+    <img src="/static/images/undraw_Message_sent_re_q2kl.png" alt="">
+    <div>
+      Cảm ơn bạn đã đặt hàng
+    </div>
+    <div>Đơn hàng của bản sẽ đến tay sớm nhất có thể</div>
+    <a href="\">Về trang chủ</a>
+  </div>
+</div>
+{% endblock %}

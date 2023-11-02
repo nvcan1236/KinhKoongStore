@@ -1,0 +1,178 @@
+.payment {
+  padding: 40px 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.form-info {
+  width: 50%;
+  padding: 30px 24px;
+  background-color: #f6f6f6;
+  
+}
+
+.form-info .title {
+  font-size: 28px;
+  
+}
+
+.form-info form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-info input {
+  border: none;
+  outline: none;
+  padding: 16px 24px;
+  border-radius: 999px;
+  
+  background-color: var(--white-color);
+}
+
+.form-info .order-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 12px;
+  font-size: 18px;
+}
+
+.form-info p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-info textarea {
+  border: none;
+  outline: none;
+  padding: 16px 24px;
+  border-radius: 24px;
+  background-color: var(--white-color);
+}
+
+.bill {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--white-color);
+}
+
+.bill .title {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.bill input, .bill button {
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background-color: #f6f6f6;
+}
+
+.bill .discount {
+  margin-top: 20px;
+}
+
+.discount-id {
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.bill .discount-id ,
+.bill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discount-id input {
+  flex: 1;
+}
+
+.bill-item strong {
+  font-weight: 600;
+}
+
+.bill-item .name {
+  display: inline-block;
+  max-width: 140px;
+}
+
+.bill-item.temp {
+  padding-top: 40px;
+  border-top: 1px dotted var(--border-color);
+}
+
+.bill-item.total {
+  padding-top: 40px;
+  border-top: 1px solid var(--border-color);
+}
+
+
+.bill-item .product-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.bill-item .product-item {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+#pay-modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+#pay-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#pay-modal .container {
+  width: 600px;
+  background-color: var(--white-color);
+  padding: 40px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  border-radius: 16px;
+  flex-direction: column;
+}
+
+#pay-modal img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#pay-modal a{
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: var(--white-color);
+  padding: 12px 40px;
+  text-decoration: none;
+}

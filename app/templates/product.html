@@ -1,0 +1,67 @@
+{% extends 'base.html' %} {% block container %}
+<section>
+  <div class="product">
+    <h3 class="title">Chi tiết sản phẩm</h3>
+
+    <div class="detail-product">
+      <div class="product-image">
+        <img
+          src="{{ product.images[0]}}"
+          alt=""
+          class="main"
+          id="product-main-img"
+        />
+        <div class="sub-image-list">
+          {% for i in range(5) %} {% if product.images[i] %}
+          <img
+            onclick="setMain({{i}})"
+            src="{{ product.images[i]}}"
+            alt="image"
+            class="sub-image {% if i==0 %} active {% endif %}"
+          />
+
+          {% endif %} {% endfor %}
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-name">{{ product.name }}</div>
+        <div class="product-price">{{ product.price}} VND</div>
+        <div class="product-more-info">
+          {% for i in product.info %}
+          <div>{{i}}</div>
+          {% endfor %}
+          <div>Chất liệu: Nhựa cao cấp</div>
+        </div>
+        <div class="product-delivery">
+          <i class="fi fi-rs-shipping-fast"></i> Miễn phí giao hàng từ 500k (
+          vận chuyển 3 - 5 ngày )
+        </div>
+        <div class="product-quantity">
+          <button onclick="add(-1)">-</button>
+          <span>1</span>
+          <button onclick="add(1)">+</button>
+        </div>
+        <div class="product-actions">
+          <div class="product-like">
+            <i class="fi fi-rs-heart"></i>
+          </div>
+          <div class="product-buy">
+            <button id="buy-btn" onclick="buy({{ product.id }})">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product-policy">
+          <div class="product-policy-title">CHÍNH SÁCH ĐỔI TRẢ</div>
+          <div class="policies">
+            <div>
+              – Không hỗ trợ bảo hành hoặc đổi với những trường hợp do quá trình
+              sử dụng như xước, móp, gãy.
+            </div>
+            <div>– Hỗ trợ đổi hoặc trả hàng trong 30 ngày.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock container%}

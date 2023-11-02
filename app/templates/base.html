@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/style/base.css" />
+    <link rel="stylesheet" href="/static/style/main.css" />
+    <link rel="stylesheet" href="/static/style/product.css" />
+    <link rel="stylesheet" href="/static/style/payment.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/static/images/shopee.png"
+    />
+    <title>matkinh Shop</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--seperate">
+                <a href="" class="header__navbar-item-link"> Kênh người bán </a>
+              </li>
+              <li
+                class="header__navbar-item-link header__navbar--has-qr header__navbar-item--seperate"
+              >
+                Tải ứng dụng
+                <div class="header__qr-code">
+                  <img
+                    src="/static/images/QR-code.png"
+                    alt="QR-code"
+                    class="header__qr-img"
+                  />
+                  <div class="header__apps">
+                    <a href=""
+                      ><img
+                        src="/static/images/chplay.png"
+                        alt="chplay"
+                        class="header__app-download"
+                    /></a>
+                    <a href=""
+                      ><img
+                        src="/static/images/appstore.png"
+                        alt="chplay"
+                        class="header__app-download"
+                    /></a>
+                  </div>
+                </div>
+              </li>
+              <li class="header__navbar-item header__navbar-social">
+                <span>Kết nối</span>
+                <a href="" class="header__navbar-item-link"
+                  ><i class="header__navbar-icon fab fa-facebook"></i
+                ></a>
+                <a href="" class="header__navbar-item-link"
+                  ><i class="header__navbar-icon fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--has-notify">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon far fa-bell"></i>
+                  Thông báo
+                </a>
+                <div class="header__notify">
+                  <header class="header__notify-header">
+                    <h3>Thông báo mới nhận</h3>
+                  </header>
+                  <ul class="header__notify-list">
+                    <li class="header__notify-item header__notify-item--seen">
+                      <a
+                        href="https://www.google.com"
+                        class="header__notify-item-link"
+                      >
+                        <div class="header__notify-item-img">
+                          <img
+                            src="/static/images/header__notify-img.png"
+                            alt="img"
+                          />
+                        </div>
+                        <div class="header__notify-item-infor">
+                          <p class="header__notify-item-title">
+                            Voucher nóng hổi đừng vội bỏ qua!
+                          </p>
+                          <p class="header__notify-item-desc">
+                            💥 Mã hoàn đến 100K xu 🌈 Đã có sẵn trong ví voucher
+                            của bạn 🔔 Hiệu lực: 0H 09/10/2021 - 23H59
+                            14/10/2021 👉 Số lượng có hạn - Dùng ngay bạn nhé!
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item header__notify-item--seen">
+                      <a
+                        href="https://www.google.com"
+                        class="header__notify-item-link"
+                      >
+                        <div class="header__notify-item-img">
+                          <img
+                            src="/static/images/header__notify-img.png"
+                            alt="img"
+                          />
+                        </div>
+                        <div class="header__notify-item-infor">
+                          <p class="header__notify-item-title">
+                            Voucher nóng hổi đừng vội bỏ qua!
+                          </p>
+                          <p class="header__notify-item-desc">
+                            💥 Mã hoàn đến 100K xu 🌈 Đã có sẵn trong ví voucher
+                            của bạn 🔔 Hiệu lực: 0H 09/10/2021 - 23H59
+                            14/10/2021 👉 Số lượng có hạn - Dùng ngay bạn nhé!
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a
+                        href="https://www.google.com"
+                        class="header__notify-item-link"
+                      >
+                        <div class="header__notify-item-img">
+                          <img
+                            src="/static/images/header__notify-img.png"
+                            alt="img"
+                          />
+                        </div>
+                        <div class="header__notify-item-infor">
+                          <p class="header__notify-item-title">
+                            Voucher nóng hổi đừng vội bỏ qua!
+                          </p>
+                          <p class="header__notify-item-desc">
+                            💥 Mã hoàn đến 100K xu 🌈 Đã có sẵn trong ví voucher
+                            của bạn 🔔 Hiệu lực: 0H 09/10/2021 - 23H59
+                            14/10/2021 👉 Số lượng có hạn - Dùng ngay bạn nhé!
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                  </footer>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon far fa-question-circle"></i>
+                  Trợ giúp
+                </a>
+              </li>
+              <li class="header__navbar-item header__navbar-user">
+                <img
+                  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/271deea8-e28c-41a3-aaf5-2913f5f48be6/de7834s-6515bd40-8b2c-4dc6-a843-5ac1a95a8b55.jpg/v1/fill/w_300,h_300,q_75,strp/default_user_icon_4_by_karmaanddestiny_de7834s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzAwIiwicGF0aCI6IlwvZlwvMjcxZGVlYTgtZTI4Yy00MWEzLWFhZjUtMjkxM2Y1ZjQ4YmU2XC9kZTc4MzRzLTY1MTViZDQwLThiMmMtNGRjNi1hODQzLTVhYzFhOTVhOGI1NS5qcGciLCJ3aWR0aCI6Ijw9MzAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.W7L0Rf_YqFzX9yxDfKtIMFnnRFdjwCHxi7xeIISAHNM"
+                  alt=""
+                  class="header__navbar-user-img"
+                />
+                <a
+                  class="header__navbar-item-link header__navbar-item-link--strong header__navbar-user-name"
+                  >Xin chào khách hàng</a
+                >
+                <ul class="header__navbar-user-menu">
+                  <li class="header__navbar-user-item">
+                    <a href="">Tài khoản của tôi</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">Đơn mua</a>
+                  </li>
+                  <li class="header__navbar-user-item">
+                    <a href="">Đăng xuất</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-with-search">
+            <a href="/" class="header__logo"> Kính koong<br />Store </a>
+
+            <div class="header__search">
+              <div class="header__search-input-wrap">
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Tìm trong shop này"
+                />
+                <div class="header__search-history">
+                  <div class="header__search-history-heading">
+                    Lịch sử tìm kiếm
+                  </div>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-item">
+                      <a href="">Điện thoại</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">Điện thoại</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__search-select">
+                <span for="">Trong shop</span>
+                <i class="fi fi-rr-angle-small-down"></i>
+                <div class="header__search-optns">
+                  <div class="header__search-optn-item">
+                    Trong shop
+                    <ion-icon
+                      name="checkmark-outline"
+                      class="header__search-optn-item-icon header__search-optn-item-icon--active"
+                    ></ion-icon>
+                  </div>
+                  <div class="header__search-optn-item">
+                    Ngoài shop
+                    <ion-icon
+                      name="checkmark-outline"
+                      class="header__search-optn-item-icon"
+                    ></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <button class="header__search-btn">
+                <i class="fi fi-rr-search eader__search-btn-icon"></i>
+              </button>
+            </div>
+
+            <div class="glasses-icon"><i class="fi fi-rr-glasses"></i></div>
+          </div>
+        </div>
+      </header>
+      <div class="app__container">{% block container %} {% endblock %}</div>
+      <footer class="footer">
+        <div class="grid">
+          <div class="grid__row">
+            <div class="grid__column-2-4">
+              <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">Trung tâm trợ giúp</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">Kính koong Store</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">Hướng dẫn mua hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid__column-2-4">
+              <ul class="footer__list">
+                <h3 class="footer__heading">Về Kính koong Store</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a class="footer__item-link" href=""
+                      >Giới thiệu về Kính koong Store</a
+                    >
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" href="">Tuyển dụng</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__item-link" href="">Điều khoản caShop</a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div class="grid__column-2-4">
+              <h3 class="footer__heading">Danh mục</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">Gọng kính</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">Kính áp tròng</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">Kính râm</a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid__column-2-4">
+              <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">
+                    <ion-icon
+                      class="footer__item-link-icon"
+                      name="logo-facebook"
+                    ></ion-icon>
+                    Facebook
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">
+                    <ion-icon
+                      class="footer__item-link-icon"
+                      name="logo-instagram"
+                    ></ion-icon>
+                    Instargram
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__item-link" href="">
+                    <ion-icon
+                      class="footer__item-link-icon"
+                      name="logo-linkedin"
+                    ></ion-icon>
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="grid__column-2-4">
+              <h3 class="footer__heading">Tải ứng dụng ngay thôi</h3>
+              <div class="footer__download">
+                <img
+                  src="/static/images/QR-code.png"
+                  alt="QR code"
+                  class="footer__download-qr"
+                />
+                <div class="footer__apps">
+                  <img
+                    src="/static/images/appstore.png"
+                    class="footer__apps-img"
+                    alt=""
+                  />
+                  <img
+                    src="/static/images/chplay.png"
+                    class="footer__apps-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="footer__policy">
+            <ul class="footer__policy-list">
+              <li class="footer__policy-item">
+                <a href="" class="footer__policy-item-link"
+                  >chính sách bảo mật</a
+                >
+              </li>
+              <li class="footer__policy-item">
+                <a href="" class="footer__policy-item-link"
+                  >Quy chế hoạt động</a
+                >
+              </li>
+              <li class="footer__policy-item">
+                <a href="" class="footer__policy-item-link"
+                  >chính sách vận chuyển</a
+                >
+              </li>
+              <li class="footer__policy-item">
+                <a href="" class="footer__policy-item-link"
+                  >chính sách trả hàng và hoàn tiền</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__registered">
+            <img
+              class="footer__registered-img"
+              src="/static/images/registered.png"
+              alt=""
+            />
+            <img
+              class="footer__registered-img"
+              src="/static/images/registered.png"
+              alt=""
+            />
+          </div>
+          <div class="footer__more-infor">
+            <h3 class="footer__more-infor-text footer__more-infor-company">
+              Công ty TNHH ...
+            </h3>
+            <h3 class="footer__more-infor-text">
+              Chịu trách nhiệm quản lý Nội Dung: Nguyễn Văn Cảnh - Điện thoại
+              liên hệ: ...
+            </h3>
+            <h3 class="footer__more-infor-text">
+              © 2021 - Bản quyền thuộc về Công ty TNHH ...
+            </h3>
+          </div>
+        </div>
+      </footer>
+
+      <script src="/static/js/main.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    </div>
+  </body>
+</html>

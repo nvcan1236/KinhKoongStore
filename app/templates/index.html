@@ -1,0 +1,175 @@
+{% extends 'base.html' %} {% block container %}
+
+<div class="grid">
+  <div class="grid__row app__content">
+    <div class="grid__column-2">
+      <div class="category">
+        <h3 class="category__heading">Danh mục shop</h3>
+        <ul class="category__list">
+          <li class="category__item">
+            <a href="" class="category__item-link category__item-link--active"
+              >Sản phẩm</a
+            >
+          </li>
+          <li class="category__item">
+            <a href="" class="category__item-link">Mắt kính</a>
+          </li>
+          <li class="category__item">
+            <a href="" class="category__item-link">Gọng kính</a>
+          </li>
+          <li class="category__item">
+            <a href="" class="category__item-link">Kính râm</a>
+          </li>
+          <li class="category__item">
+            <a href="" class="category__item-link">Phụ kiện</a>
+          </li>
+          <li class="category__item">
+            <a href="" class="category__item-link">Gọng kính trẻ em</a>
+          </li>
+          <li class="category__item">
+            <a href="" class="category__item-link">Kính áp tròng</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid__column-10">
+      <div class="home-filter">
+        <span class="home-filter__label">Sắp xếp theo</span>
+        <button class="home-filter__btn btn">Phổ biến</button>
+        <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+        <button class="home-filter__btn btn">Bán chạy</button>
+
+        <div class="home-filter__seclect-input">
+          <span class="seclect-input__label">Giá</span>
+          <i class="seclect-input__icon fas fa-angle-down"></i>
+          <ul class="home-filter__list">
+            <li class="home-filter__item">
+              <a href="" class="home-filter__item-link">Giá: Thấp đến Cao</a>
+            </li>
+            <li class="home-filter__item">
+              <a href="" class="home-filter__item-link">Giá: Cao đến Thấp</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="home-filter__page">
+          <div class="home-filter__page-num">
+            <span class="home-filter__page-curent">1</span>/3
+          </div>
+          <div class="home-filter__page-control">
+            <a
+              href=""
+              class="home-filter__page-btn home-filter__page-btn--disable"
+            >
+              <i class="fi fi-rr-angle-left"></i>
+            </a>
+            <a href="" class="home-filter__page-btn">
+              <i class="fi fi-rr-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-product">
+        <div class="grid__row">
+          {% for p in products %}
+            <div class="grid__column-2-4">
+                <a href="/product?id={{p.id}}" class="home-product-item">
+                <div
+                    class="home-product-item__img"
+                    style="
+                    background-image: url({{p.images[0]}});
+                    "
+                ></div>
+                <h4 class="home-product-item__name">{{ p.name }}</h4>
+                <div class="home-product-item__price">
+                    <span class="home-product-item__price-old">{{ p.price + 50000 }}đ</span>
+                    <span class="home-product-item__price-current">{{ p.price }}đ</span>
+                </div>
+                <div class="home-product-item__action">
+                    <span
+                    class="home-product-item__action-liked home-product-item__action-liked"
+                    >
+                    <i class="fi fi-rr-heart home-product-item__icon-notlike"></i>
+                    <i class="fi fi-sr-heart home-product-item__icon-liked"></i>
+                    </span>
+                    <span class="home-product-item__action-rating">
+                    <i
+                        class="home-product-item__action-star-yellow fi fi-ss-star"
+                    ></i>
+                    <i
+                        class="home-product-item__action-star-yellow fi fi-ss-star"
+                    ></i>
+                    <i class="fi fi-ss-star home-product-item__action-star-yellow"></i>
+                    <i class="fi fi-ss-star home-product-item__action-star-yellow"></i>
+                    <i class="fi fi-ss-star home-product-item__action-star-yellow"></i>
+                    </span>
+                </div>
+
+                <div class="home-product-item__origin">
+                    <span class="home-product-item__origin-name"
+                    >TP. Hồ Chí Minh</span
+                    >
+                </div>
+                <div class="home-product-item__favoutite">
+                    <i class="fas fa-check"></i>
+                    <span>Yêu thích</span>
+                </div>
+                <div class="home-product-item__label-sale-off">
+                    <div class="home-product-item__label-sale-off-value">GIẢM</div>
+                    <span>50K</span>
+                </div>
+                </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="pagination home-pagination">
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">
+              <ion-icon
+                class="pagination-item-link-icon"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link pagination-item-link--active"
+              >1</a
+            >
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">4</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">5</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">...</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">10</a>
+          </li>
+          <li class="pagination-item">
+            <a href="" class="pagination-item-link">
+              <ion-icon
+                class="pagination-item-link-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
