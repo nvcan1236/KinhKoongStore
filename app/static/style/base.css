@@ -201,6 +201,11 @@ button {
     background-color: var(--primary-color);
 }
 
+.pagination-item-link.disable {
+    pointer-events: none;
+    color: #ccc;
+}
+
 .pagination-item {
 }
 

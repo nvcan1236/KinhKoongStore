@@ -875,6 +875,7 @@ ion-icon.header__search-optn-item-icon--active {
 .home-filter__page-btn--disable {
     background-color: #f9f9f9;
     cursor: default;
+    event-pointer: none;
 }
 
 .home-filter__page-btn--disable .home-filter__page-icon {

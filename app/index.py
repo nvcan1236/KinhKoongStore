@@ -2,11 +2,14 @@ from flask import Flask, render_template, request
 from app.data import products
 
 app = Flask(__name__)
+global products
 
 
 @app.route('/')
 def home():
-    return render_template('index.html', products=products)
+    page = int(request.args.get('page')) if request.args.get('page') else 1
+    pr = products[(page - 1) * 10:page * 10]
+    return render_template('index.html', products=pr, page=page)
 
 
 @app.route('/product')

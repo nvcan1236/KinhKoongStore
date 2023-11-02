@@ -54,16 +54,16 @@
 
         <div class="home-filter__page">
           <div class="home-filter__page-num">
-            <span class="home-filter__page-curent">1</span>/3
+            <span class="home-filter__page-curent">{{page}}</span>/3
           </div>
           <div class="home-filter__page-control">
             <a
-              href=""
-              class="home-filter__page-btn home-filter__page-btn--disable"
+              href="{% if page-1 >= 1 %} ?page={{page-1}} {% endif%}"
+              class="home-filter__page-btn {% if page-1 < 1 %} home-filter__page-btn--disable {% endif%}"
             >
               <i class="fi fi-rr-angle-left"></i>
             </a>
-            <a href="" class="home-filter__page-btn">
+            <a href="{% if page+1 <= 3 %} ?page={{page+1}} {% endif%}" class="home-filter__page-btn {% if page+1 >3 %} home-filter__page-btn--disable {% endif%}">
               <i class="fi fi-rr-angle-right"></i>
             </a>
           </div>
@@ -128,38 +128,24 @@
       <div class="pagination home-pagination">
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a href="" class="pagination-item-link">
+            <a href="?page={{page-1}}" class="pagination-item-link {% if page-1 <= 0 %} disable {% endif%}"  >
               <ion-icon
                 class="pagination-item-link-icon"
                 name="chevron-back-outline"
               ></ion-icon>
             </a>
           </li>
-          <li class="pagination-item">
-            <a href="" class="pagination-item-link pagination-item-link--active"
-              >1</a
+
+            {% for i in range(3)%}
+             <li class="pagination-item">
+            <a href="?page={{i+1}}" class="pagination-item-link {% if page==i+1%} pagination-item-link--active{% endif%}"
+              >{{ i+1 }}</a
             >
           </li>
+            {% endfor %}
+
           <li class="pagination-item">
-            <a href="" class="pagination-item-link">2</a>
-          </li>
-          <li class="pagination-item">
-            <a href="" class="pagination-item-link">3</a>
-          </li>
-          <li class="pagination-item">
-            <a href="" class="pagination-item-link">4</a>
-          </li>
-          <li class="pagination-item">
-            <a href="" class="pagination-item-link">5</a>
-          </li>
-          <li class="pagination-item">
-            <a href="" class="pagination-item-link">...</a>
-          </li>
-          <li class="pagination-item">
-            <a href="" class="pagination-item-link">10</a>
-          </li>
-          <li class="pagination-item">
-            <a href="" class="pagination-item-link">
+            <a href="?page={{page+1}}" class="pagination-item-link {% if page+1 >3 %} disable {% endif%}">
               <ion-icon
                 class="pagination-item-link-icon"
                 name="chevron-forward-outline"
