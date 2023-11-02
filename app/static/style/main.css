@@ -69,10 +69,10 @@
 }
 
 .header__navbar-user-img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    margin: 0 4px;
+    margin: 0 12px;
 }
 .header__navbar-user-menu{
     display: block;

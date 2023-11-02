@@ -183,6 +183,117 @@ products = [
             'Chiều dài càng kính (mm): 148',
             'Bộ sản phẩm bao gồm kính,khăn lụa và hộp đựng kính cao cấp.'
         ]
+    },
+    {
+        'id': 10,
+        'name': 'Gọng Kính V Gentle Monster South Side Rep 1:1 Bản Chuẩn Nhất Thị Trường',
+        'price': 399000,
+        'images': [
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910006/matkinh/11/ayrzcwxp16ysvnnbuek6.jpg',
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910006/matkinh/11/blo9ymyzllvaghttoxio.jpg',
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910004/matkinh/11/k14qp4bu9oztkhmakjbh.jpg'
+        ],
+        'info': [
+            'Gọng kính bằng nhựa Acetate đẹp sáng bóng sắc nét , uốn nắn chỉnh được ,logo thương hiệu dập GM V , bản lề hợp kim chắc chắn , gập mềm nhẹ.',
+            'Có thể thay tròng làm kính cận được',
+            'Đầy đủ phụ kiện đi kèm',
+            'Giới tính : nam /nữ.',
+            'Thiết kế trẻ trung , đẹp sắc nét , tinh tế , sang trọng và đẳng cấp',
+            'Size kính: 48-21-152mm',
+            'Kiểu dáng vuông cá  tính phong cách hàn quốc, Phù hợp mọi khuôn mặt được giới trẻ yêu thích.',
+            'Bộ sản phẩm bao gồm kính,khăn lụa và hộp đựng kính cao cấp.'
+        ]
+    },
+    {
+        'id': 11,
+        'name': 'Gọng kính HERO Phong Cách Thời Trang',
+        'price': 499000,
+        'images': [
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910030/matkinh/12/xnz7lrzoaoxgslbawd2c.png',
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910030/matkinh/12/uj3otki3rkbwtqqgcsnh.png',
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910030/matkinh/12/iw1mcapxizt8nvgk5ias.png'
+        ],
+        'info': [
+            'Kích thước (Tròng x Cầu kính x Càng kính): 51mmx17mmx140mm.',
+            'Màu gọng: Đen nhám.',
+            'Màu tròng: Không màu.',
+            'Viền kính: Nguyên khung.',
+            'Phù hợp gương mặt: Mặt trái xoan, mặt dài, vuông, tròn.',
+            'Kiểu dáng đa dạng, màu sắc bắt mắt, nhiều lựa chọn',
+            'Thiết kế trẻ trung, hiện đại, phù hợp xu hướng thời trang',
+            'Gọng kính nhẹ, mềm dẻo được làm từ chất liệu TR-90.',
+            'Có dòng kính riêng dành cho người lớn & trẻ em.',
+            'Mức giá phù hợp với nhu cầu người Việt Nam cùng chất lượng đảm bảo',
+            'Bộ sản phẩm bao gồm kính,khăn lụa và hộp đựng kính cao cấp.'
+        ]
+    },
+    {
+        'id': 12,
+        'name': 'Gọng Kính Bamboo – Tròn Vát Cạnh Trên – Hợp Kim Cao Cấp',
+        'price': 349000,
+        'images': [
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910059/matkinh/13/ywwreuuhgyvrebfzvoks.jpg',
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910058/matkinh/13/c6hgxxk9rxt0qai61tiq.jpg'
+        ],
+        'info': [
+            'Size mắt kính (chiều rộng của một bên tròng kính): 50 mm',
+            'Size cầu kính (chiều rộng cầu nối 2 mắt kính): 19 mm.',
+            'Chiều dài càng kính (chiều dài của gọng kính): 145 mm.',
+            'Gọng kim loại cao cấp, uốn nắn chỉnh được, bản lề hợp kim chắc chắn, gập mềm nhẹ trơn tru.',
+            'Có thể thay tròng làm kính cận được.',
+            'Thanh Mảnh, phù hợp cho cả nam và nữ.',
+            'Thiết kế trẻ trung, đẹp sắc nét, tinh tế, sang trọng và đẳng cấp.? Kiểu dáng vuông cá tính phong cách hàn quốc, Phù hợp mọi khuôn mặt được giới trẻ yêu thích.',
+            'Kính gọng Mắt vuông thời trang thiết kế tối giản. Free size vừa mọi cỡ mắt, cỡ đầu.',
+            'Sản phẩm được gia công tỉ mỉ và sắc sảo đến từng chi tiết nhằm duy trì tuổi thọ và tính thẩm mỹ lâu dài.',
+            'Đệm mũi êm ái, tạo cảm giác dễ chịu khi đeo.',
+            'Càng kính chắc chắn, không gây ra vết hằn khó chịu trên da',
+            'Ốc vặn chống rỉ sét, được gia công kỹ lưỡng và cẩn thận.',
+            'Bộ sản phẩm bao gồm kính,khăn lụa và hộp đựng kính cao cấp.'
+        ]
+    },
+    {
+        'id': 13,
+        'name': 'Gọng kính cận Bầu – Oval nam nữ chất liệu Kim loại gọng Nhựa đúc khối phụ kiện thời trang HOT!',
+        'price': 649000,
+        'images': [
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910083/matkinh/14/jmowspkdv8xdq2vfjfg7.jpg',
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910082/matkinh/14/raa5p6evkhcgxqn9rsaw.jpg'
+        ],
+        'info': [
+            'Gọng mắt kính thời trang nam/nữ thiết kế vừa vặn với nhiều hình dáng gương mặt, khi đeo tạo sự hài hòa, cân đối giữa hai bên thái dương, mắt và sóng mũi.',
+            'Chân gọng kính làm từ nhựa dẻo, giúp mang gọng kính trong thời gian dài cũng không gây khó chịu hay đau ở vành tai.',
+            'Mắt kính theo gọng là mắt kính 0 độ các bạn có thể mang giả cận, chống bụi và lắp mắt kính cận',
+            'Chốt gọng chắc chắn giúp giữ form kính mắt tốt.',
+            'Gọng kính được thiết kế thời trang phù hợp cho cả nam và nữ.',
+            'Gọng kính cận vuông nam nữ Sanhe là một trong những dòng nhựa dẻo phổ biến nhất hiện nay.',
+            'Kiểu dáng phong phú đơn giản dễ đeo, chuộng mọi dáng khuôn mặt, màu sắc dễ phối.'
+            'Bộ sản phẩm bao gồm kính,khăn lụa và hộp đựng kính cao cấp.'
+        ]
+    },
+{
+        'id': 14,
+        'name': 'Gọng kính cận Bầu – Oval nam nữ Old Fashion chất liệu Nhựa lõi thép',
+        'price': 349000,
+        'images': [
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910106/matkinh/15/wohvntzxskwkns30ebd3.jpg',
+            'https://res.cloudinary.com/dbd7vfk12/image/upload/v1698910106/matkinh/15/aw7x5nh1yrnn7clmtvqv.jpg'
+        ],
+        'info': [
+            'Size tròng: 54 mm',
+            'Size cầu mũi: 15 mm',
+            'Chiều dài càng kính: 143 mm',
+            'Gọng kính bằng Nhựa cao cấp, uốn nắn chỉnh được, bản lề hợp kim chắc chắn, gập mềm nhẹ.',
+            'Có thể thay tròng làm kính cận được.',
+            'Phù hợp cho cả nam và nữ.',
+            'Thiết kế trẻ trung, đẹp sắc nét, tinh tế, sang trọng và đẳng cấp.',
+            'Kiểu dáng vuông cá tính phong cách hàn quốc, Phù hợp mọi khuôn mặt được giới trẻ yêu thích.',
+            'Kính gọng Mắt vuông thời trang thiết kế tối giản. Free size vừa mọi cỡ mắt, cỡ đầu.',
+            'Sản phẩm được gia công tỉ mỉ và sắc sảo đến từng chi tiết nhằm duy trì tuổi thọ và tính thẩm mỹ lâu dài.',
+            'Đệm mũi êm ái, tạo cảm giác dễ chịu khi đeo.',
+            'Càng kính chắc chắn, không gây ra vết hằn khó chịu trên da.',
+            'Ốc vặn chống rỉ sét, được gia công kỹ lưỡng và cẩn thận.',
+            'Bộ sản phẩm bao gồm kính,khăn lụa và hộp đựng kính cao cấp.'
+        ]
     }
 ]
 
